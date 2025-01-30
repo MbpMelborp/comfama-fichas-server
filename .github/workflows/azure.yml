@@ -49,7 +49,15 @@
 #           package: .output/deploy.zip
 #           publish-profile: ${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE }}
 
+name: Build and deploy Nuxt 3 project to Azure Function App - nuxt-on-azure
 
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
   deploy:
