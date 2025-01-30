@@ -4,7 +4,9 @@
     "build": "nitro build",
     "dev": "nitro dev",
     "prepare": "nitro prepare",
-    "preview": "node .output/server/index.mjs"
+    "preview": "node .output/server/index.mjs",
+    "buildf": "NITRO_PRESET=azure npm run build",
+    "previewf": "npx @azure/static-web-apps-cli start .output/public --api-location .output/server"
   },
   "devDependencies": {
     "nitropack": "latest"

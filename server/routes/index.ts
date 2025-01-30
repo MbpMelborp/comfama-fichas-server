@@ -1,5 +1,6 @@
 // az functionapp deployment source config-zip -g comfama -n comfama-fichas-server --src .output/deploy.zip
 export default defineEventHandler((event) => {
+  console.log("init")
   setResponseHeader(event, "Content-Type", "text/html");
   setResponseHeader(event, "Cache-Control", "no-cache");
   setResponseHeader(event, "Transfer-Encoding", "chunked");

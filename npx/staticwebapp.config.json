@@ -9,7 +9,6 @@
       "rewrite": "/api/server"
     }
   ],
-  
   "platform": {
     "apiRuntime": "node:20"
   },
